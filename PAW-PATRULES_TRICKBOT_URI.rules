@@ -1,0 +1,42 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# ♞ Cheval de Troie Trickbot - URI
+
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞"; flow:to_server, stateless; content:"GET"; content:"/filecall-dll.php"; fast_pattern; content:"88.218.16.9"; reference: url,https://twitter.com/i/web/status/1278225259414671360; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_02, updated_at 2020_07_04; sid:3316457; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞"; flow:to_server, stateless; content:"GET"; content:"/file.php"; content:"88.218.16.9"; fast_pattern; reference: url,https://twitter.com/i/web/status/1278225259414671360; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_02, updated_at 2020_07_04; sid:3321017; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞"; flow:to_server, stateless; content:"GET"; content:"/trafficdll.php"; fast_pattern; content:"185.82.126.178"; reference: url,https://twitter.com/i/web/status/1278225259414671360; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_02, updated_at 2020_07_04; sid:3321018; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞"; flow:to_server, stateless; content:"GET"; content:"/api.php"; content:"185.14.30.131"; fast_pattern; reference: url,https://twitter.com/i/web/status/1278225259414671360; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_02, updated_at 2020_07_04; sid:3321019; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞ possible"; flow:to_server, stateless; content:"GET"; content:"/images/imgpaper.png"; fast_pattern; reference: url,https://twitter.com/VK_Intel/status/1281570630169759745; reference: url,https://unit42.paloaltonetworks.com/goodbye-mworm-hello-nworm-trickbot-updates-propagation-module/; reference: url,https://urlhaus.abuse.ch/browse.php?search=%2Fimages%2Fimgpaper.png; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_12, updated_at 2020_07_12; sid:3321020; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞ possible"; flow:to_server, stateless; content:"GET"; content:"/images/cursor.png"; fast_pattern; reference: url,https://twitter.com/VK_Intel/status/1281570630169759745; reference: url,https://unit42.paloaltonetworks.com/goodbye-mworm-hello-nworm-trickbot-updates-propagation-module/; reference: url,https://urlhaus.abuse.ch/browse.php?search=%2Fimages%2Fcursor.png; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_12, updated_at 2020_07_12; sid:3321021; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞ possible"; flow:to_server, stateless; content:"GET"; content:"/images/redcar.png"; fast_pattern; reference: url,https://unit42.paloaltonetworks.com/goodbye-mworm-hello-nworm-trickbot-updates-propagation-module/; reference: url,https://urlhaus.abuse.ch/browse.php?search=%2Fimages%2Fredcar.png; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_12, updated_at 2020_07_12; sid:3321022; rev:1; classtype:trojan-activity;)
+alert tcp any any -> any any (msg:"🐾 - ☣ Download request 🌐 Trickbot trojan ♞ possible"; flow:to_server, stateless; content:"GET"; content:"/ico/VidT6cErs"; fast_pattern; reference: url,https://unit42.paloaltonetworks.com/goodbye-mworm-hello-nworm-trickbot-updates-propagation-module/; reference: url,https://urlhaus.abuse.ch/browse.php?search=%2Fico%2FVidT6cErs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.trickbot; metadata:created_at 2020_07_12, updated_at 2020_07_12; sid:3321023; rev:1; classtype:trojan-activity;)

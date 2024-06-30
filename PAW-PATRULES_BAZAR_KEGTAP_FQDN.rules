@@ -1,0 +1,46 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 🐴 Trojan Bazar / KEGTAP - FQDN
+
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"labelcs.com"; nocase; reference: url,https://www.gosecure.net/blog/2021/02/01/bazarloader-mocks-researchers-in-december-2020-malspam-campaign/; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301668; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"mixcinc.com"; nocase; reference: url,https://www.gosecure.net/blog/2021/02/01/bazarloader-mocks-researchers-in-december-2020-malspam-campaign/; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301669; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"nicknamec.com"; nocase; reference: url,https://www.gosecure.net/blog/2021/02/01/bazarloader-mocks-researchers-in-december-2020-malspam-campaign/; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301670; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"flowersny.net"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301671; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"flowersny.us"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301672; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"ttoffice.net"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301673; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"ttoffice.us"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301674; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"toptipsoffice.us"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301675; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"ajourlingerie.net"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301676; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"ajourlingerie.us"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301677; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 Cobalt Strike - KEGTAP / BazarLoader / BazarBackdoor"; dns_query; flow: to_server, stateless; content:"japort.com"; nocase; reference: url,https://cofense.com/blog/bazarbackdoor-stealthy-infiltration; reference: url, reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2021_02_10, updated_at 2021_02_10; sid:3301678; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS Request 🌐 - BazarLoader - Diavol Ransomware 🔒"; dns_query; flow: to_server, stateless; content:"turkcell.info"; nocase; reference: url,https://thedfirreport.com/2021/12/13/diavol-ransomware/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.bazarbackdoor; metadata:created_at 2022_02_14, updated_at 2022_02_14; sid:3301679; rev:1; classtype:trojan-activity;)

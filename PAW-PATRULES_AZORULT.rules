@@ -1,0 +1,59 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# Azorult 👾
+
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"fgdjhksdfsdxcbv.ru"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301643; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"karimgoussd.ug"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301644; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"mantis.co.ug"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301645; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"mantis.ug"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301646; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"michaeldiamantis.ug"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301647; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"telete.in"; nocase; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301648; rev:1; classtype:trojan-activity;)
+alert ip any any -> 195.201.225.248 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301649; rev:1; classtype:trojan-activity;)
+alert ip any any -> 34.65.10.107 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301650; rev:1; classtype:trojan-activity;)
+alert ip any any -> 217.8.117.77 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://pastebin.com/ZXctQpkC; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301651; rev:1; classtype:trojan-activity;)
+alert ip any any -> 94.158.245.253 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/file/eccd9f4aaf3fb0eb1b920077f85984ff979dc4512b4f2857fb9b2ad5017d424b/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301652; rev:1; classtype:trojan-activity;)
+alert ip any any -> 152.89.247.66 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/file/83e56ab95613da7a4e58890ec535a02b8f3f8063d800170a6071c5e9e833a6a2/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301653; rev:1; classtype:trojan-activity;)
+alert ip any any -> 89.45.4.216 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/file/12a8398274277b00fb75bf98e8e7c77b4f04de57987d9d24cbcd1c5981bc5d02/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301654; rev:1; classtype:trojan-activity;)
+alert ip any any -> 192.53.123.202 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/file/12a8398274277b00fb75bf98e8e7c77b4f04de57987d9d24cbcd1c5981bc5d02/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301655; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"giuseppe.ug"; nocase; reference: url,https://www.virustotal.com/gui/file/286c2eb8755215619d8cb48cc884091251729d5925b74444fe3b62c2c1a5acb5/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301656; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"asdxcvxdfgdnbvrwe.ru"; nocase; reference: url,https://www.virustotal.com/gui/file/286c2eb8755215619d8cb48cc884091251729d5925b74444fe3b62c2c1a5acb5/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301657; rev:1; classtype:trojan-activity;)
+alert ip any any -> 194.5.98.95 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/file/286c2eb8755215619d8cb48cc884091251729d5925b74444fe3b62c2c1a5acb5/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301658; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"perrymason.ac.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/perrymason.ac.ug/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301659; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"masonp.ac.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/masonp.ac.ug/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301660; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"marcristosc.ac.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/marcristosc.ac.ug; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301661; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"tamerimia.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/tamerimia.ug/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301662; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"tamera.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/tamera.ug/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301663; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"xafsavxcfdgbdsfg.ru"; nocase; reference: url,https://www.virustotal.com/gui/domain/xafsavxcfdgbdsfg.ru/relations; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301664; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"thompson.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/thompson.ug; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301665; rev:1; classtype:trojan-activity;)
+alert ip any any -> 185.215.113.77 any (msg:"🐾 - 🚨 Connection to ↗ 🎛 Azorult 👾"; reference: url,https://www.virustotal.com/gui/ip-address/185.215.113.77; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301666; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 Azorult 👾"; dns_query; flow: to_server, stateless; content:"lastimaners.ug"; nocase; reference: url,https://www.virustotal.com/gui/domain/lastimaners.ug/detection; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.azorult; metadata:created_at 2021_08_09, updated_at 2021_08_09; sid:3301667; rev:1; classtype:trojan-activity;)

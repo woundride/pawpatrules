@@ -1,0 +1,45 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 🐀 AsyncRAT - FQDN
+
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"julian.linkpc.net"; nocase; reference: url,https://twitter.com/hexfati/status/1281490222618939392; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_10, updated_at 2020_07_10; sid:3301624; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"erksene.dynu.net"; nocase; reference: url,https://twitter.com/ScumBots/status/1285398504798552064; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_21, updated_at 2020_07_21; sid:3301625; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"mavennezeliora.ddns.net"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301626; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"khaki123123.kro.kr"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301627; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"zcx.kro.kr"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301628; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"criticalvip.kro.kr"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301629; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"kingspy1301.ddns.net"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301630; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"hackthisishack-61574.portmap.host"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301631; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"maka02.kro.kr"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301632; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"docencrypt.ddns.net"; nocase; reference: url,https://twitter.com/ScumBots; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_23, updated_at 2020_07_23; sid:3301633; rev:1; classtype:trojan-activity;)
+alert dns any any -> any any (msg:"🐾 - ☠ DNS request 🌐 - 🎛 C2 🐀 AsyncRAT"; dns_query; flow: to_server, stateless; content:"holocmsv2.zapto.org"; nocase; reference: url,https://twitter.com/ScumBots/status/1287568987916828672; reference: url,https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat; metadata:created_at 2020_07_29, updated_at 2020_07_29; sid:3301634; rev:1; classtype:trojan-activity;)

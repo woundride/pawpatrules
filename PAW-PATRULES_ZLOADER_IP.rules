@@ -1,0 +1,38 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 🚪 Loader Zloader - IP
+
+alert ip any any -> 3.82.47.49 any (msg:"🐾 - 🚨 Outgoing connection ↗ 🎛 C2 🚪 Loader Zloader / Bazaloader -> Rançongiciel Ryuk 🔒"; reference: url,https://www.virustotal.com/gui/file/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/community; reference: url,https://www.joesandbox.com/analysis/507314#iocs; reference: url,https://bazaar.abuse.ch/sample/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.zloader; metadata:created_at 2020_10_23, updated_at 2020_10_23; sid:3321234; rev:1; classtype:trojan-activity;)
+alert ip any any -> 35.160.72.225 any (msg:"🐾 - 🚨 Outgoing connection ↗ 🎛 C2 🚪 Loader Zloader / Bazaloader -> Rançongiciel Ryuk 🔒"; reference: url,https://www.virustotal.com/gui/file/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/community; reference: url,https://www.joesandbox.com/analysis/507314#iocs; reference: url,https://bazaar.abuse.ch/sample/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.zloader; metadata:created_at 2020_10_23, updated_at 2020_10_23; sid:3321235; rev:1; classtype:trojan-activity;)
+alert ip any any -> 54.214.110.185 any (msg:"🐾 - 🚨 Outgoing connection ↗ 🎛 C2 🚪 Loader Zloader / Bazaloader -> Rançongiciel Ryuk 🔒"; reference: url,https://www.virustotal.com/gui/file/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/community; reference: url,https://www.joesandbox.com/analysis/507314#iocs; reference: url,https://bazaar.abuse.ch/sample/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.zloader; metadata:created_at 2020_10_23, updated_at 2020_10_23; sid:3321236; rev:1; classtype:trojan-activity;)
+alert ip any any -> 34.230.23.107 any (msg:"🐾 - 🚨 Outgoing connection ↗ 🎛 C2 🚪 Loader Zloader / Bazaloader -> Rançongiciel Ryuk 🔒"; reference: url,https://www.virustotal.com/gui/file/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/community; reference: url,https://www.joesandbox.com/analysis/507314#iocs; reference: url,https://bazaar.abuse.ch/sample/327da452b8c86ed8910056646771de8fb92a928c3d135efb2d41e6cb26806382/; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.zloader; metadata:created_at 2020_10_23, updated_at 2020_10_23; sid:3321237; rev:1; classtype:trojan-activity;)

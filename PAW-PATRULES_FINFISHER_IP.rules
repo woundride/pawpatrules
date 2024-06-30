@@ -1,0 +1,41 @@
+#                          KXK00OOkxxkO00KX0            
+#                   ,NXKxo:,'...        ...';cdOXN:     
+#                   l;. ..,:ldxkOOOOOOkkxol:,..  .o     
+#                  dk  lOOOOOOkkkkkkkkkkkOOOOOOx  dk    
+#              KNXOc. :0OkkkkkkkkkkkkkkkkkkkkkO0l. :kXNX
+#              x. .'ckOOkkkkkkkkkkkookkkkkkkkkkOOOl,. .k
+#              d. o0Okkkkkkkkkkkkk.   okkkkkkkkkkOO0k  x
+#              l. c0kkkkkkko. .ckk    .kd..'xkkkkkk0x .o
+#              ;, ;0kkkkkkkc    ;ko. .dk.   :kkkkkk0l ':
+#              .l .OOkkkkkkkl. .lkocldkkl. 'xkkkkkOO, c.
+#               l  o0kkkk:..'dkkk.    .;okkkkkkkkk0x  l 
+#               .: .OOkkk;    xk,         .:kkkkkO0; ;. 
+#                ;. :0kkkko;,cko            :kkkk0d .:  
+#                 :  oOkkkkkkkk            .dkkk0k. :   
+#                  :  dOkkkkkkk      .:odxkkkkkOk. ;    
+#                   ;  oOkkkkkkx:,,ckkkkkkkkkkOx. ,     
+#                    '. ;OOkkkkkkkkkkkkkkkkkOOc  '      
+#                      ' .lOOkkkkkkkkkkkkkOOd. .        
+#                        . .lOOkkkkkkkkkOOo' ..         
+#                          ' .;dOOOkOOOx:. .            
+#                            .. .,lxo;. ..              
+#                                .. ..                  
+#                                         
+# ____   ___        __  ____       _              _           
+#|  _ \ / \ \      / / |  _ \ __ _| |_ _ __ _   _| | ___  ___ 
+#| |_) / _ \ \ /\ / /  | |_) / _` | __| '__| | | | |/ _ \/ __|
+#|  __/ ___ \ V  V /   |  __/ (_| | |_| |  | |_| | |  __/\__ \
+#|_| /_/   \_\_/\_/    |_|   \__,_|\__|_|   \__,_|_|\___||___/
+#                                                             
+# IDS Rules for Suricata
+# 📜 Charles BLANC-ROLIN ⠵ - https://pawpatrules.fr - https://www.apssis.com - https://github.com/woundride
+# Licence CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 🐀 FinFisher RAT - IP
+
+alert ip any any -> 45.86.136.138 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309786; rev:1; classtype:trojan-activity;)
+alert ip any any -> 79.143.87.216 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309787; rev:1; classtype:trojan-activity;)
+alert ip any any -> 185.25.51.104 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309788; rev:1; classtype:trojan-activity;)
+alert ip any any -> 109.235.67.175 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309789; rev:1; classtype:trojan-activity;)
+alert ip any any -> 213.252.247.105 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309790; rev:1; classtype:trojan-activity;)
+alert ip any any -> 108.61.190.183 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309791; rev:1; classtype:trojan-activity;)
+alert ip any any -> 185.141.24.204 any (msg:"🐾 - 🚨 Outgoing connection - 🐀 FinFisher RAT possible "; reference: url,https://securelist.com/finspy-unseen-findings/104322/#iocs; reference: url,https://malpedia.caad.fkie.fraunhofer.de/details/win.finfisher; metadata:created_at 2021_09_29, updated_at 2021_09_29; sid:3309792; rev:1; classtype:trojan-activity;)
