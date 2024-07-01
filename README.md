@@ -1,6 +1,6 @@
 Working repositotory only for :
-- pull-requests
-- submissions 
+- pull-requests / submissions
+- issues
 
 Limits :
 - Not updated in real time
